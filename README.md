@@ -1,6 +1,6 @@
 # Nelia
 Docker Django 
-![Guanajuato_LOGO](https://user-images.githubusercontent.com/130393232/235364677-7637aee9-68a4-4576-9664-6530164fba9d.png)
+![Guanajuato_LOGO](https://user-images.githubusercontent.com/130393232/235364897-940fd76d-c56a-4e3f-9300-7f9d9893447a.png)
 ## Sistema Registro de Visitas de Usuarios
 
 Uno de los principales programas de Gobierno del Estado de Guanajuato para asegurdad la calidad es el programa MAS, este programa solicita el registro de cada Usuario que se presenta en una dependencia de gobierno y este sistema consiste en automatizar ese registro de usuarios.
@@ -55,7 +55,7 @@ Uno de los principales programas de Gobierno del Estado de Guanajuato para asegu
   
 Aqui se representa de manera gráfica la base de datos del sistema, en el cual se puede ver las relaciones entre las tablas y sus campos a detalle.
 
-![Base de datos de la primera etapa](info\Diagrama de BD.pdf)
+[Diagrama de BD.pdf](https://github.com/NeliaMtz/Nelia/files/11361778/Diagrama.de.BD.pdf)
 
 Esta imagen se puede generar en linea con la herramienta [dbdiagram.io] y esta puede compartir el diagrama en línea [dbdocs.io].
 
@@ -251,6 +251,8 @@ Superuser created successfully.
 * Ingresar a la aplicación de administración de base de datos.
 
   http://localhost:5050/
+
+
 
 
 
