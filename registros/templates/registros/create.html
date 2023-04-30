@@ -1,0 +1,33 @@
+{% extends 'registros/base.html' %} {% load static %} {% load widget_tweaks %}
+
+{% block content %}
+
+<div class="container">		
+
+
+  <form method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    <div class="row">
+      <h2 class="text-center">Registro de visitas de usuarios</h2>
+      <hr>
+      <hr>
+        <div class="col-md-6">
+        <div class="form-group"><label for="CURP" class="txt_negrita">CURP:</label>{{ form.CURP|add_class:"form-control" }}</div>
+        <div class="form-group"><label for="Fecha" class="txt_negrita">Fecha:</label>{{ form.Fecha|add_class:"form-control" }}</div>
+        <div class="form-group"><label for="Hora_ini" class="txt_negrita">Hora Inicio:</label>{{ form.Hora_ini|add_class:"form-control" }}</div> 
+        <div class="form-group"><label for="Hora_fin" class="txt_negrita">Hora Fin:</label>{{ form.Hora_fin|add_class:"form-control" }}</div>
+        <div class="form-group"><label for="id_Tramite" class="txt_negrita">Tramite:</label>{{ form.id_Tramite|add_class:"form-control" }}</div>
+        <div class="form-group"><label for="CURP_Cap" class="txt_negrita">Curp Capturista:</label>{{ form.CURP_Cap|add_class:"form-control" }}</div> 
+      </div>
+     
+      <br>
+      <button type="submit" class="btn btn-primary">Guardar visita</button>
+      <a href="{% url 'agreementList' %}" type="submit" class="btn btn-secondary">Cancelar</a>
+    </div>
+    
+  </form>
+</div>
+
+{% endblock content %}
+

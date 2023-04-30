@@ -1,0 +1,215 @@
+*{
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box ;
+	-moz-box-sizing: border-box ;
+	-ms-box-sizing: border-box ;
+	-o-box-sizing: border-box ;
+	box-sizing: border-box ;
+}
+
+html{
+	position: relative;
+	min-height: 100%;
+}
+body{
+	/* Margin bottom by footer height */
+  	margin-bottom: 200px;
+  	padding-bottom: 250px;
+	background-color: #ffffff;
+}
+
+.container {
+   /*box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.31), -12px 0 8px -4px rgba(31, 73, 125, 0.31);*/
+   box-shadow: -60px 0px 100px -90px #000000, 60px 0px 100px -90px #000000;
+}
+header{
+	z-index: 10000;
+	background-color: #FFF;
+	width: 90%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border-radius: 0px;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,0.31);
+	/*-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.31);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.31);*/
+}
+
+.section-header{
+   
+	background-color: #FFF;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin:0;
+	width: 100%;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.section-header img {
+	margin-bottom: 10px;
+}
+
+.section-branding{
+	background-image: url('liston_pag.png');
+	background-color: #1500cd;
+	width: 100%;
+	height: 62px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.31);
+	box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.31);
+}
+
+.section-branding h3{
+	color: #FFF;
+}
+
+.section-branding h4{
+	color: #FFF;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 10px;
+    margin-bottom: 10px;
+	padding-left: 2rem;
+	font-size: 18px;
+	font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+
+
+}
+
+@media(max-width:767px){
+	.section-header img {
+		padding-left: 0;
+		margin: 0 auto;
+		display: block;
+		width: 100%;
+    	height: auto;
+    	margin-bottom: 10px;
+	}
+	.section-branding h4{
+		text-align: center;
+		font-size: 1em;
+	}
+}
+
+.section-bar{
+	background-color: #FFF;
+	width: 100%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+a {
+	-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+	-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+	-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+	color: #666;
+	text-decoration: none;
+	/*border-bottom: solid 1px #ddd;
+	border-top: solid 1px #ddd;*/
+}
+
+a strong {
+	-moz-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+	-webkit-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+	-ms-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+}
+
+a:hover {
+	color: #1500cd;
+	border-bottom-color: rgba(255, 255, 255, 0);
+}
+
+a:hover strong {
+	color: #1500cd;
+}
+
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 180px;
+	background-color: #e5e5e5;
+	background: -webkit-linear-gradient(top,#e5e5e5 0%,#fefefe 100%);
+	border: thin solid #ececec;
+	border-top-width: 2px;
+	border-top-style: none;
+	border-top-color: #c1c5c7;
+	color: #000;
+	text-align: left;
+	font-size: 12px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.31);
+	box-shadow: 0px 4px 5px 2px rgba(0,0,0,0.31);
+	margin-left: 0;
+    margin-right: 0;
+}
+
+footer p{
+	text-align: right;
+	color: #666;
+}
+footer img{
+	margin-bottom: 10px;
+}
+@media(max-width:767px){
+	footer p{
+		text-align: center;
+	}
+	footer img{
+		margin: 0 auto;
+		display: block;
+	}
+}
+/* Lista detallada usada en la descripcio de los talleres*/
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  overflow: hidden;
+  clear: left;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dl-horizontal dd {
+  margin-left: 180px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #cd5700;
+    border-color: #cd5700;
+}
