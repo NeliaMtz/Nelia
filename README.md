@@ -1,6 +1,6 @@
 # Nelia
-Docker Jango 
-![Getting Started](static/registros/img/Guajuato_LOGO.png)
+Docker Django 
+![Guanajuato_LOGO](https://user-images.githubusercontent.com/130393232/235364677-7637aee9-68a4-4576-9664-6530164fba9d.png)
 ## Sistema Registro de Visitas de Usuarios
 
 Uno de los principales programas de Gobierno del Estado de Guanajuato para asegurdad la calidad es el programa MAS, este programa solicita el registro de cada Usuario que se presenta en una dependencia de gobierno y este sistema consiste en automatizar ese registro de usuarios.
@@ -203,7 +203,7 @@ PGADMIN_MAIL=marthanelia@gmail.com
  ✔ Container nelia-postgres-1  Running                                                                                           0.0s 
  ✔ Container nelia-django-1    Running                                                                                           0.0s 
 
- ![Imagen del Docker con las tres imagenes cargadas](![Alt text](../info/CapturaDocker.PNG))
+![CapturaDocker](https://user-images.githubusercontent.com/130393232/235364702-28c54c6a-a77a-4a01-9fed-8d4e934af46b.PNG)
 
 * Ingresar al contenedor de Docker.
 
@@ -251,6 +251,8 @@ Superuser created successfully.
 * Ingresar a la aplicación de administración de base de datos.
 
   http://localhost:5050/
+
+
 
 
 
