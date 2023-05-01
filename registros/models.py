@@ -64,4 +64,4 @@ class Visita(models.Model):
     def __str__(self):
         template = '{0.id}, {0.CURP}, {0.Fecha}, {0.Hora_ini}, {0.Hora_fin}, {0.id_tramite}, {0.CURP_Cap}'
         return template.format(self)
-        # return self.id    
+        #    return self.id    

@@ -47,16 +47,16 @@ class registrosNuevo(SuccessMessageMixin, CreateView):
     model = Visita
     form = Visita
     fields = "__all__"
-    exclude = ('created_date',)
+    #exclude = ('created_date',)
    
     success_message = 'Visita añadida correctamente.'
    
-    # def get_success_url(self):      
+    def get_success_url(self):      
 
-    #     return reverse('agreementList')
+      return reverse('agreementList')
     
-    # def get_form(self):
-    #     form = super().get_form()
+    def get_form(self):
+        form = super().get_form()
     #     form.fields['fecha_ini'].widget = DateInput(attrs={
     #         'type': 'date',
     #         'class': 'form-control',
@@ -67,7 +67,7 @@ class registrosNuevo(SuccessMessageMixin, CreateView):
     #         'class': 'form-control',
     #         'placeholder': 'Fecha de Fin'
     #     })
-    #     return form
+        return form
     
 
 class registrosActualizar(SuccessMessageMixin, UpdateView): 

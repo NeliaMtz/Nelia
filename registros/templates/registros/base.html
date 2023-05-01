@@ -26,7 +26,7 @@
 
     <header>
         <div class="section-header">
-            <img src="{% static '/registros/img/Guanajuato_logo.png' %}" title="Logo Gobierno de Guanajuato">
+          <div align="right" ><img src="{% static '/registros/img/Guanajuato_LOGO.png' %}" alt="SEG"></div>
         </div>
         <div class="section-branding">
             <div class="row">
@@ -45,10 +45,10 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link" href="{% url 'agreementList' %}">Usuario</a>
+                        <a class="nav-link" href="{% url 'agreementList' %}">Visita</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href=""></a>
+                        <a class="nav-link" href="">Capturista</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href=""><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
@@ -56,7 +56,10 @@
                         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script></a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href=""></a>
+                        <a class="nav-link" href="">CT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="">Tramite</a>
                       </li>
                     </ul>
                   </div>
@@ -66,20 +69,26 @@
         </div>
     </header>
 
+    {% block content %}
+
+    {% endblock content %}
+
     <footer>
         <div class="container">
+          <div class="row">
+            <div align="center" ><img src="{% static '/registros/img/princi.png' %}" alt="SEG"></div>
             <div class="row">
-                <div>
+                <div align="left">
                     <p><strong>Gobierno del Estado de Guanajuato</strong><br>
                     SEG - USAE Tarimoro -  Zaragoza #74 Centro Tarimoro Gto <br>
-                    <strong>Teléfono: 466 66 4 09 41 y 466 66 4 02 35</strong></p>
+                    <strong>Teléfono: 466 66 4 09 41 y 466 66 4 02 35</strong></p></div>
                 </div>
             </div>
         </div>
     </footer>
-    {% block content %}
+
     
-    {% endblock content %}
+    
 
     
 
