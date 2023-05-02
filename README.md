@@ -15,6 +15,8 @@ Uno de los principales programas de Gobierno del Estado de Guanajuato para asegu
 
 4. [Instalacion de Docker Compose](#id4)
 
+5. [Sistema de captura de Visitas](#id5)
+
 
 ## Base de datos <a name="id1"></a>
 
@@ -253,8 +255,99 @@ Superuser created successfully.
   http://localhost:5050/
 
 
+## Sistema de Captura de Visitas <a name="id5"> </a>
 
 
+![CapturaSistemaVisitas](https://user-images.githubusercontent.com/130393232/235564041-89057aa7-dd2e-42d3-b792-9a8b3fd41679.PNG)
+
+Se muestra la pantalla principal del sistema en donde se realizan las capturas de las visitas de usuarios.
+
+Para lograr lo anterior se trabajó en lo siguiente:
+
+Creación de proyecto en Django
+C:\Windows\system32>cd..
+
+C:\Windows>cd..
+
+C:\>cd localregistros
+
+C:\localregistros>django-admin startproject registros
+
+C:\localregistros>cd registos
+El sistema no puede encontrar la ruta especificada.
+
+C:\localregistros>cd registros
+
+C:\localregistros\registros>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+C:\localregistros\registros>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 27, 2023 - 19:34:43
+Django version 4.2, using settings 'registros.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+C:\localregistros\registros>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 27, 2023 - 19:35:26
+Django version 4.2, using settings 'registros.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+C:\localregistros\registros>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 27, 2023 - 19:46:55
+Django version 4.2, using settings 'registros.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+[27/Apr/2023 19:47:00] "GET / HTTP/1.1" 200 10731
+[27/Apr/2023 19:47:00] "GET /static/admin/css/fonts.css HTTP/1.1" 404 1816
+
+C:\localregistros\registros>python manage.py runserver
+
+ Hacemos un archivo view.py
+ 
+ 
+ 
+Es necesario instalar lo siguiente
+ 
+pip install django-widget-tweaks
+
+pip install django-bootstrap5
+pip install --upgrade pip
 
 
 
