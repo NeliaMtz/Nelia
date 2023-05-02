@@ -1,10 +1,10 @@
 # Create your views here.
 
 from django.shortcuts import get_object_or_404, render, redirect
+from django.urls import reverse
 from django.views.generic import ListView, DetailView 
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from .models import Capturista, Tramite, CT, Visita, Usuario
-from django.urls import reverse
+from .models import Visita
 from django.contrib import messages 
 from django.contrib.messages.views import SuccessMessageMixin 
 from django.forms.widgets import DateInput
@@ -17,7 +17,7 @@ from django.contrib.auth import authenticate, login, logout
 
 class registrosListar(ListView): 
     model = Visita
-    template_name = 'index.html'
+    template_name = 'base.html'
     context_object_name = 'registros'
     queryset = Visita.objects.order_by('id')
     paginate_by = 5 # Cambia el número según tus necesidades
